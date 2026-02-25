@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this index or the linked repositories in research, please cite it."
+title: "Boundary Discipline Index"
+type: software
+authors:
+- family-names: "Moore"
+  given-names: "Duston"
+  email: "dhwcmoore@gmail.com"
+year: 2026
+license: "MIT"
