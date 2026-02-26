@@ -3,8 +3,8 @@
 **Portfolio: Deterministic Architectures, Formal Invariants, and
 External Verification**
 
-Author: Duston Moore\
-Location: Canada\
+Author: Duston Moore
+Location: Canada
 Focus: Mechanistic Interpretability · Structural Invariants · Oversight
 Architectures
 
@@ -15,9 +15,9 @@ Architectures
 Powerful systems should not be trusted to certify their own behaviour.
 
 Generation, constraint, and verification must remain structurally
-distinct roles.\
-Invariants should be explicit rather than implicit.\
-State transitions should be inspectable rather than opaque.\
+distinct roles.
+Invariants should be explicit rather than implicit.
+State transitions should be inspectable rather than opaque.
 Execution should produce artefacts that can be independently recomputed
 and verified.
 
@@ -42,9 +42,9 @@ accumulation and explicit state-machine confirmation.
 
 Characteristics:
 
--   Explicit state transitions\
--   Deterministic regime emission\
--   Long-memory accumulation rather than transient thresholding\
+-   Explicit state transitions
+-   Deterministic regime emission
+-   Long-memory accumulation rather than transient thresholding
 -   Structured output logs for replay and inspection
 
 Role in the stack:
@@ -65,9 +65,9 @@ with JSONL trace output.
 
 Characteristics:
 
--   Proven regime invariant\
--   Mechanical extraction preserving specification\
--   Deterministic runtime behaviour\
+-   Proven regime invariant
+-   Mechanical extraction preserving specification
+-   Deterministic runtime behaviour
 -   Structured audit trace
 
 Role in the stack:
@@ -87,8 +87,8 @@ refinement.
 
 Characteristics:
 
--   Explicit coverage constraints (no gap / no overlap)\
--   Boundary operators as first-class objects\
+-   Explicit coverage constraints (no gap / no overlap)
+-   Boundary operators as first-class objects
 -   Preservation theorems under composition
 
 Role in the stack:
@@ -98,7 +98,7 @@ completeness and invariant preservation.
 
 ------------------------------------------------------------------------
 
-### 4) VeriBound Rocq Seal
+### 4) VeriBoundand Seal (Rocq → OCaml)
 
 https://github.com/dhwcmoore/veribound-rocq-seal
 
@@ -107,8 +107,8 @@ formal artefacts with deterministic trace integrity checks.
 
 Characteristics:
 
--   Deterministic seal recomputation\
--   Tamper detection\
+-   Deterministic seal recomputation
+-   Tamper detection
 -   Minimal verifier for runtime artefacts
 
 Role in the stack:
@@ -122,9 +122,9 @@ recomputed and checked for integrity.
 
 Taken together, the four repositories form a layered safety analogue:
 
-Deterministic modelling\
-→ Formal invariants\
-→ Structural partition guarantees\
+Deterministic modelling
+→ Formal invariants
+→ Structural partition guarantees
 → Independent audit and verification
 
 Each layer constrains the next.
@@ -140,9 +140,9 @@ reasoning, and outputs are externally verifiable.
 These projects are not large-scale models. They are minimal, controlled
 artefacts designed to explore structural questions relevant to:
 
--   Mechanistic interpretability\
--   Oversight mechanisms\
--   Robustness under distribution shift\
+-   Mechanistic interpretability
+-   Oversight mechanisms
+-   Robustness under distribution shift
 -   Separation of generation and verification roles
 
 The research trajectory extends these architectural principles toward
