@@ -1,63 +1,47 @@
-# Boundary Discipline Index
+# Mathematical Software Portfolio
 
-This repository is the stable public entry point for a small, curated set of my work.
+This repository is a stable index of selected projects demonstrating formally specified systems, deterministic modelling, and executable verification pipelines. Each linked repository is buildable, documented, and representative of a distinct capability.
 
-It exists for one reason: clear navigation.
+---
 
-If you are reviewing my work for hiring, research collaboration, or consulting, start here. Each linked repository is selected because it is coherent, buildable, and representative of a particular capability.
+## Selected Projects
 
-## The curated set
+### 1. Verified Threshold Dynamics Kernel (Rocq → OCaml)
 
-### 1) [Rust rupture detection engine](https://github.com/dhwcmoore/rupture-engine)
-A deterministic rupture detection engine for financial time series using long-memory strain accumulation, adaptive capacity, and robust state-machine confirmation.
+A formally specified deterministic state-transition kernel with a proved invariant and mechanical extraction to OCaml. This project demonstrates formal specification in Rocq, invariant reasoning over regime emission, program extraction, and deterministic runtime with structured trace output.
 
-Repository: (link here)
+**Repository:** [verified-yield-regime-kernel](https://github.com/dhwcmoore/verified-yield-regime-kernel)
 
-What it demonstrates:
-- deterministic modelling rather than heuristic "signals"
-- state machines and explicit regime transitions
-- long-memory accumulation and strain concepts
-- practical engineering, tests, and performance focus
+---
 
-### 2) [Lean boundary discipline library](https://github.com/dhwcmoore/boundary-discipline-lean)
-A Lean library that formalises boundary, partition, and composition concepts with a clear module structure and buildable project configuration.
+### 2. Rust Rupture Detection Engine
 
-Repository: (link here)
+A deterministic rupture detection engine for time series using long-memory strain accumulation and explicit state transitions. This project demonstrates state-machine design, deterministic modelling, performance-oriented implementation, and testable regime logic.
 
-What it demonstrates:
-- formal verification competence
-- clean library structure and dependency management
-- proof discipline and definitional clarity
+**Repository:** [rupture-engine](https://github.com/dhwcmoore/rupture-engine)
 
-### 3) [VeriBound in Rocq with cryptographic sealing](https://github.com/dhwcmoore/veribound-rocq-seal)
-A verification-oriented project demonstrating audit-grade outputs, seal generation, and verifiable traces.
+---
 
-Repository: (link here)
+### 3. Lean Boundary Discipline Library
 
-What it demonstrates:
-- compliance and audit framing
-- formal specification and verification
-- cryptographic sealing and trace integrity
+A Lean library formalising boundary, partition, and composition concepts. This project demonstrates formal verification competence, clean module organisation, and proof structure with dependency management.
 
-## Why only these repositories
+**Repository:** [boundary-discipline-lean](https://github.com/dhwcmoore/boundary-discipline-lean)
 
-There is more work in progress, but this index is intentionally narrow.
+---
 
-This is a deliberate constraint: I am curating a small set of repositories that are stable, intelligible, and commercially legible. Additional projects will be released only after they are reorganised to the same standard.
+### 4. VeriBound (Rocq + Cryptographic Sealing)
 
-## Quick start
+A verification-oriented system producing audit-grade outputs with cryptographic seals. This project demonstrates formal specification, compliance-oriented modelling, and trace integrity through verification pipelines.
 
-If you want to evaluate quickly:
+**Repository:** [veribound-rocq-seal](https://github.com/dhwcmoore/veribound-rocq-seal)
 
-1. Read `architecture/repo_map.md` to see the conceptual map.
-2. Read `architecture/status.md` for what is complete and what is in progress.
-3. Pick one repository, build it locally, and review tests and documentation.
+---
+
+## Profile
+
+I build correctness-constrained computational cores and move them from formal specification to executable systems. My focus areas include deterministic transition systems, program extraction, invariant-driven modelling, and auditability with trace integrity.
 
 ## Contact
 
-Duston Moore, PhD
-Email: dhwcmoore@gmail.com
-
-## Licence
-
-See `LICENSE`.
+ [dhwcmoore@gmail.com](mailto:dhwcmoore@gmail.com)
