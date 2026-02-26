@@ -1,147 +1,113 @@
 # Boundary Discipline Index
 
-**Empirical Research Portfolio for AI Safety & Interpretability**
+**Portfolio Map for Deterministic Systems, Formal Kernels, and
+Structural AI Safety**
 
-**Author:** Duston Moore
-**Location:** Canada
-**Focus:** Mechanistic Interpretability · Formal Invariants · Structural
-AI Safety
-
-------------------------------------------------------------------------
-
-## Overview
-
-This repository documents a research programme exploring a central
-question in AI safety:
-
-> Can highly capable models internally certify their own outputs, or is
-> external structural oversight necessary?
-
-This work investigates structural failure modes in generative systems
-using a combination of:
-
--   Formal invariants
--   Boundary-based reasoning
--   Lightweight empirical probes
--   Mechanistic interpretability techniques
-
-The goal is to bridge formal verification intuitions with empirical
-large-model analysis.
+Author: Duston Moore\
+Location: Canada\
+Focus: Mechanistic Interpretability · Formal Invariants · Deterministic
+Architectures
 
 ------------------------------------------------------------------------
 
-## Research Motivation
+## Purpose of This Repository
 
-Modern frontier models exhibit increasing autonomy, reasoning depth, and
-internal complexity. As capability scales, so does the risk of:
+This repository serves as a structured index of core projects exploring
+a shared architectural principle:
 
--   Implicit self-certification
--   Representational collapse
--   Hidden optimisation objectives
--   Internal circuit behaviour that diverges from declared outputs
+> Generation processes should not implicitly certify themselves.\
+> Verification, constraint, and invariants should be structurally
+> explicit.
 
-This project studies structural properties of models that may correlate
-with these risks.
-
-Rather than treating safety as a behavioural overlay, this research
-explores whether safety must instead rely on structural separation
-between:
-
--   **Production** --- the generative process
--   **Closure** --- the verification or certification of outputs
-
-This separation can be studied empirically using interpretability tools.
+The repositories linked below demonstrate this principle across
+deterministic engines, formally verified kernels, and auditable runtime
+systems.
 
 ------------------------------------------------------------------------
 
-## Research Direction
+## Core Repositories
 
-The current focus is on:
+### 1. Rupture Engine
 
-### 1. Structural Probes of Internal Representations
+https://github.com/dhwcmoore/rupture-engine
 
-Investigating whether internal representations exhibit:
+A deterministic rupture detection engine implementing long-memory strain
+accumulation and explicit state-machine confirmation.
 
--   Boundary collapse
--   Overcompression of semantic distinctions
--   Internal feature entanglement
+Key characteristics:
 
-### 2. External Verification Analogues
+-   Long-memory accumulation of structural strain\
+-   Explicit, interpretable state transitions\
+-   Deterministic classification logic\
+-   No opaque optimisation loop
 
-Drawing inspiration from formal verification kernels, this work explores
-whether models demonstrate identifiable patterns when:
+Although demonstrated on financial time series, the architecture is
+domain-agnostic. The engine models structural rupture detection using
+explicit dynamics rather than learned heuristics.
 
--   Certifying their own reasoning chains
--   Justifying outputs
--   Performing self-evaluation tasks
+Role in portfolio:
 
-### 3. Experimental Approach
-
-Planned empirical methods include:
-
--   Activation patching
--   Feature attribution
--   Circuit tracing
--   Representation similarity metrics
--   Controlled perturbation experiments
-
-All experiments are designed to be lightweight, reproducible, and
-compatible with open-source LLM infrastructure.
+Demonstrates interpretable, deterministic modelling where state
+transitions are inspectable and reproducible.
 
 ------------------------------------------------------------------------
 
-## Technical Background
+### 2. Verified Yield Regime Kernel
 
-The research direction builds on prior work in:
+https://github.com/dhwcmoore/verified-yield-regime-kernel
 
--   Lean / Rocq / Coq formal verification
--   Type-level invariants
--   Kernel-based closure systems
--   Deterministic state modelling
+A formally specified threshold-dynamics state-transition kernel with:
 
-This background informs the hypothesis that internal self-certification
-without structural separation may produce identifiable empirical
-signatures.
+-   Invariant proof in Rocq\
+-   Mechanical extraction to OCaml\
+-   Deterministic runtime execution\
+-   JSONL audit trace output
 
-------------------------------------------------------------------------
+Architecture pattern:
 
-## Why This Matters
+Data → Extracted Kernel → Deterministic State Update → JSONL Trace
 
-If models implicitly collapse production and verification processes,
-this may:
+Although illustrated using yield curve spread classification, the
+architectural contribution is structural: specification is separated
+from execution, and invariants are enforced externally rather than
+assumed internally.
 
--   Reduce reliability under distribution shift
--   Increase vulnerability to adversarial prompts
--   Create alignment fragility at scale
+Role in portfolio:
 
-Understanding whether and how such collapse manifests internally could
-inform:
-
--   Interpretability-driven oversight
--   Safer training objectives
--   Structural interventions
+Demonstrates formal production/closure separation and externally
+enforced correctness constraints.
 
 ------------------------------------------------------------------------
 
-## Intended Output
+## Cross-Cutting Theme
 
-The aim of this project is to produce:
+Across these systems:
 
--   A small empirical study
--   Reproducible experiments
--   Public write-up or paper submission
+-   State transitions are explicit.
+-   Invariants are defined rather than assumed.
+-   Execution is deterministic and auditable.
+-   Verification is external to generation.
 
-This repository functions as a structured foundation for that work.
+This architectural framing motivates ongoing empirical work in
+mechanistic interpretability. If neural systems collapse generation and
+verification internally, measurable structural signatures may exist in
+their representations.
 
 ------------------------------------------------------------------------
 
-## Research Intent
+## Relevance to AI Safety Research
 
-I am motivated by reducing catastrophic risks from advanced AI systems
-and am transitioning into full-time empirical AI safety research.
+These repositories collectively explore:
 
-I am particularly interested in contributing to:
+-   Structural separation of roles
+-   Deterministic traceability
+-   External constraint enforcement
+-   Interpretable state-machine dynamics
 
--   Mechanistic Interpretability
--   Scalable Oversight
--   Structural Approaches to AI Control
+They serve as concrete system-level analogues for research questions in:
+
+-   Mechanistic interpretability\
+-   Scalable oversight\
+-   Robustness under distribution shift
+
+This index functions as a structured map of that work.
