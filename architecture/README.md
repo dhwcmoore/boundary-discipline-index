@@ -2,7 +2,8 @@
 
 This folder explains how the curated repositories relate to each other.
 
-It is written for two audiences:
+It is written for several audiences:
+- AI safety researchers and fellowship reviewers
 - technical reviewers (engineering, formal methods, quantitative work)
 - decision makers (risk, compliance, audit, research leadership)
 

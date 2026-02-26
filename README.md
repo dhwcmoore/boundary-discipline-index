@@ -1,47 +1,147 @@
-# Mathematical Software Portfolio
+# Boundary Discipline Index
 
-This repository is a stable index of selected projects demonstrating formally specified systems, deterministic modelling, and executable verification pipelines. Each linked repository is buildable, documented, and representative of a distinct capability.
+**Empirical Research Portfolio for AI Safety & Interpretability**
 
----
+**Author:** Duston Moore\
+**Location:** Canada\
+**Focus:** Mechanistic Interpretability · Formal Invariants · Structural
+AI Safety
 
-## Selected Projects
+------------------------------------------------------------------------
 
-### 1. Verified Threshold Dynamics Kernel (Rocq → OCaml)
+## Overview
 
-A formally specified deterministic state-transition kernel with a proved invariant and mechanical extraction to OCaml. This project demonstrates formal specification in Rocq, invariant reasoning over regime emission, program extraction, and deterministic runtime with structured trace output.
+This repository documents a research programme exploring a central
+question in AI safety:
 
-**Repository:** [verified-yield-regime-kernel](https://github.com/dhwcmoore/verified-yield-regime-kernel)
+> Can highly capable models internally certify their own outputs, or is
+> external structural oversight necessary?
 
----
+This work investigates structural failure modes in generative systems
+using a combination of:
 
-### 2. Rust Rupture Detection Engine
+-   Formal invariants\
+-   Boundary-based reasoning\
+-   Lightweight empirical probes\
+-   Mechanistic interpretability techniques
 
-A deterministic rupture detection engine for time series using long-memory strain accumulation and explicit state transitions. This project demonstrates state-machine design, deterministic modelling, performance-oriented implementation, and testable regime logic.
+The goal is to bridge formal verification intuitions with empirical
+large-model analysis.
 
-**Repository:** [rupture-engine](https://github.com/dhwcmoore/rupture-engine)
+------------------------------------------------------------------------
 
----
+## Research Motivation
 
-### 3. Lean Boundary Discipline Library
+Modern frontier models exhibit increasing autonomy, reasoning depth, and
+internal complexity. As capability scales, so does the risk of:
 
-A Lean library formalising boundary, partition, and composition concepts. This project demonstrates formal verification competence, clean module organisation, and proof structure with dependency management.
+-   Implicit self-certification\
+-   Representational collapse\
+-   Hidden optimisation objectives\
+-   Internal circuit behaviour that diverges from declared outputs
 
-**Repository:** [boundary-discipline-lean](https://github.com/dhwcmoore/boundary-discipline-lean)
+This project studies structural properties of models that may correlate
+with these risks.
 
----
+Rather than treating safety as a behavioural overlay, this research
+explores whether safety must instead rely on structural separation
+between:
 
-### 4. VeriBound (Rocq + Cryptographic Sealing)
+-   **Production** --- the generative process\
+-   **Closure** --- the verification or certification of outputs
 
-A verification-oriented system producing audit-grade outputs with cryptographic seals. This project demonstrates formal specification, compliance-oriented modelling, and trace integrity through verification pipelines.
+This separation can be studied empirically using interpretability tools.
 
-**Repository:** [veribound-rocq-seal](https://github.com/dhwcmoore/veribound-rocq-seal)
+------------------------------------------------------------------------
 
----
+## Research Direction
 
-## Profile
+The current focus is on:
 
-I build correctness-constrained computational cores and move them from formal specification to executable systems. My focus areas include deterministic transition systems, program extraction, invariant-driven modelling, and auditability with trace integrity.
+### 1. Structural Probes of Internal Representations
 
-## Contact
+Investigating whether internal representations exhibit:
 
- [dhwcmoore@gmail.com](mailto:dhwcmoore@gmail.com)
+-   Boundary collapse\
+-   Overcompression of semantic distinctions\
+-   Internal feature entanglement
+
+### 2. External Verification Analogues
+
+Drawing inspiration from formal verification kernels, this work explores
+whether models demonstrate identifiable patterns when:
+
+-   Certifying their own reasoning chains\
+-   Justifying outputs\
+-   Performing self-evaluation tasks
+
+### 3. Experimental Approach
+
+Planned empirical methods include:
+
+-   Activation patching\
+-   Feature attribution\
+-   Circuit tracing\
+-   Representation similarity metrics\
+-   Controlled perturbation experiments
+
+All experiments are designed to be lightweight, reproducible, and
+compatible with open-source LLM infrastructure.
+
+------------------------------------------------------------------------
+
+## Technical Background
+
+The research direction builds on prior work in:
+
+-   Lean / Rocq / Coq formal verification\
+-   Type-level invariants\
+-   Kernel-based closure systems\
+-   Deterministic state modelling
+
+This background informs the hypothesis that internal self-certification
+without structural separation may produce identifiable empirical
+signatures.
+
+------------------------------------------------------------------------
+
+## Why This Matters
+
+If models implicitly collapse production and verification processes,
+this may:
+
+-   Reduce reliability under distribution shift\
+-   Increase vulnerability to adversarial prompts\
+-   Create alignment fragility at scale
+
+Understanding whether and how such collapse manifests internally could
+inform:
+
+-   Interpretability-driven oversight\
+-   Safer training objectives\
+-   Structural interventions
+
+------------------------------------------------------------------------
+
+## Intended Output
+
+The aim of this project is to produce:
+
+-   A small empirical study\
+-   Reproducible experiments\
+-   Public write-up or paper submission
+
+This repository functions as a structured foundation for that work.
+
+------------------------------------------------------------------------
+
+## Research Intent
+
+I am motivated by reducing catastrophic risks from advanced AI systems
+and am transitioning into full-time empirical AI safety research.
+
+I am particularly interested in contributing to:
+
+-   Mechanistic Interpretability\
+-   Scalable Oversight\
+-   Structural Approaches to AI Control
